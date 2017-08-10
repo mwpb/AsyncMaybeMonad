@@ -15,9 +15,8 @@ let main argv =
         return "First Completed"}
     let x = Some 2
     let second = maybe{
-            let! y = x
-            return y
-        }
+        let! y = x
+        return y}
     Console.WriteLine first
     Console.ReadLine() |> ignore
     0
